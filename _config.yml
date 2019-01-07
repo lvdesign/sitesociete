@@ -19,7 +19,11 @@ description: site société pour démo
 baseurl: /sitesociete
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: lvdesign
-github_username:  jekyll
+api_key: Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz
+
+collections:
+  products:
+     output: true
 
 # Build settings
 markdown: kramdown
