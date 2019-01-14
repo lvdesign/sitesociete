@@ -28,26 +28,26 @@
 
     <body>
         <!-- Nav -->
-        <nav>
-          <div class="nav-wrapper">
-            <a href="{{ site.baseurl }}/" class="brand-logo"><img src=" {{"/img/picto/pictoF.svg" | prepend:site.baseurl }} " alt="logo site vitrine" style="height:30px; margin-right:.2em">Site Vitrine</a>
+        <div class="navbar-fixed">
+        <nav class="green">
+          <div class="nav-wrapper z-depth-5">
+            <a href="{{ site.baseurl }}/" class="brand-logo société"><img src=" {{"/img/picto/pictoF.svg" | prepend:site.baseurl }}" alt="logo site société" style="height:35px; margin: 0 .1em 0 .4em">Société</a>
             <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
             <ul class="right hide-on-med-and-down">
-              <li><a href="{{ site.baseurl }}/#best-features">Features</a></li>
+              <li><a href="{{ site.baseurl }}/#services">Services</a></li>
               <li><a href="{{ site.baseurl }}/#produits">Produits</a></li>
-              <li><a href="{{ site.baseurl }}/#gallery">Gallery</a></li>
+              <li><a href="{{ site.baseurl }}/#actu">Actualités</a></li>
               <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
-              <li><a href="{{ site.baseurl }}/produits.html">Produits</a></li>
-              <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+              <li><a href="{{ site.baseurl }}/produits.html"><i class="tiny material-icons">shopping_cart</i></a></li>
+             
             </ul>
           </div>
         </nav>
-      
+    </div>
         <ul class="sidenav" id="mobile-demo">
-            <li><a href="{{ site.baseurl }}/#best-features">Features</a></li>
-            <li><a href="{{ site.baseurl }}/#produits">Produits</a></li>
-            <li><a href="{{ site.baseurl }}/#gallery">Gallery</a></li>
-            <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
-            <li><a href="{{ site.baseurl }}/produits.html">Produits</a></li>
-            <li><a href="{{ site.baseurl }}/blog.html">Blog</a></li>
+            <li><a href="{{ site.baseurl }}/#services">Services<i class="tiny material-icons">style</i></a></li>
+            <li><a href="{{ site.baseurl }}/#produits">Produits<i class="tiny material-icons">spa</i></a></li>
+            <li><a href="{{ site.baseurl }}/#actu">Acualités<i class="tiny material-icons">favorite</i></a></li>
+            <li><a href="{{ site.baseurl }}/#contact">Contact<i class="tiny material-icons">email</i></a></li>
+            <li><a href="{{ site.baseurl }}/produits.html">Boutique<i class="tiny material-icons">shopping_cart</i></a></li>
         </ul>
