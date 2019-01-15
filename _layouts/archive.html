@@ -1,0 +1,53 @@
+---
+layout: default
+---
+<section class="page clearfix">
+	
+	<h1 class="h1-static-page">Mes archives</h1>
+
+		<nav >
+		<a href="#allposts" class="marge-right upperC">All posts ::: </a>
+		{% for categorie in site.categories %}
+		<a href="#{{ categorie | first | remove: '' }}" class="marge-right upperC">{{ categorie | first }}</a>
+			{% if forloop.last %}
+				{% else %}
+			{% endif %}
+		{% endfor %}
+		</nav>
+ 	
+ 	<article class="single-post">
+ 	
+ 	<div class="catbloc" id="allposts">
+	 	 <h2>All posts</h2>
+		 	 <ul>
+		 	{% for product in site.products %}
+		 	 <li><a href="{{site.baseurl }}{{ product.url }}">
+		 	 <time class="datetime marge-right">{{ product.description}}</time>{{product.name }}</a>
+		 	</li>
+		 	{% endfor %}
+		 	</ul>
+ 	</div>
+			{% for categorie in site.categories %}
+			 <div class="catbloc" id="{{ categorie  | first | remove:' ' }}">
+			 <h2>{{ categorie | first }}</h2>
+			        
+			         <ul>
+			            {% for products in categorie  %}
+			              {% for product in products %}
+			              	{% if product.url %}
+			                 <li>
+			                 <a href="{{site.baseurl }}{{ product.url }}">
+			                     <time class="datetime marge-right">{{ product.description }}</time>
+			                     {{ product.name }}
+			                   </a>
+			                </li>
+			                {% endif %}
+			             {% endfor %}
+			           {% endfor %}
+			        </ul>
+			    </div>
+			{% endfor %}
+</article>
+
+	
+</section>

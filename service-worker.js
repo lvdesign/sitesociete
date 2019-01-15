@@ -6,37 +6,21 @@
 // http://creativecommons.org/publicdomain/zero/1.0/
   // Update 'version' if you need to refresh the cache
   var staticCacheName = 'static';
-  var version = 'v2::SiteVitrine';
+  var version = 'v1::sitesociete';
 
   // Store core files in a cache (including a page to display when offline)
   function updateStaticCache() {
       return caches.open(version + staticCacheName)
           .then(function (cache) {
               return cache.addAll([
-                  '/sitevitrine/js/main.min.js',
-                  '/sitevitrine/css/bootstrap.min.css',
-                  '/sitevitrine/css/main.min.css',
-                  '/sitevitrine/img/fonds/fondFooter.svg',
-                  '/sitevitrine/favicon-32x32.png',
-                  '/sitevitrine/android-chrome-192x192.png',
-                  '/sitevitrine/android-chrome-256x256.png',
-                  '/sitevitrine/apple-touch-icon.png',
-                  '/sitevitrine/img/imgfleurs/ex1.png',
-                  '/sitevitrine/img/imgfleurs/ex2.png',
-                  '/sitevitrine/img/imgfleurs/ex3.png',
-                  '/sitevitrine/img/imgfleurs/ex4.png',
-                  '/sitevitrine/img/imgfleurs/ex5.png',
-                  '/sitevitrine/img/imgfleurs/ex6.png',
-                  '/sitevitrine/img/imgfleurs/ex7.png',
-                  '/sitevitrine/img/imgfleurs/ex8.png',
-                  '/sitevitrine/img/insta/insta1.png',
-                  '/sitevitrine/img/insta/insta2.png',
-                  '/sitevitrine/img/insta/insta3.png',
-                  '/sitevitrine/img/picto/pictoF.svg',
-                  '/sitevitrine/img/roman-kraft-208004-unsplash.png',
-                  '/sitevitrine/',
-                  '/sitevitrine/index.html',
-                  '/sitevitrine/offline.html'
+                  '/sitesociete/js/main.js',
+                  '/sitesociete/js/vendor/',
+                  '/sitesociete/css/main.css/',
+                  '/sitesociete/css/materialize.min.css',                  
+                  '/sitesociete/img/roman-kraft-208004-unsplash.png',
+                  '/sitesociete/',
+                  '/sitesociete/index.html',
+                  '/sitesociete/offline.html'
               ]);
           });
   };
@@ -101,7 +85,7 @@
                   .catch(function () {
                       return caches.match(request)
                           .then(function (response) {
-                              return response || caches.match('/sitevitrine/offline.html');
+                              return response || caches.match('/sitesociete/offline.html');
                           })
                   })
           );

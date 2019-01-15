@@ -50,6 +50,8 @@ head: snipcart.html
               (Average: {{ sum | round: 1 }})
             {% endif %}
           </h3>
+          <!-- https://github.com/lvdesign/sitesociete/invitations 
+          https://api.staticman.net/v2/entry/snipcart/snipcart-jekyll-integration/gh-pages/reviews-->
           <form method="POST"
                 action="https://api.staticman.net/v2/entry/snipcart/snipcart-jekyll-integration/gh-pages/reviews"
                 oninput="result.value=parseInt(this['fields[review]'].value)">

@@ -25,6 +25,7 @@ collections:
   products:
      output: true
 
+
 # Build settings
 markdown: kramdown
 theme: minima
