@@ -6,7 +6,7 @@
 // http://creativecommons.org/publicdomain/zero/1.0/
   // Update 'version' if you need to refresh the cache
   var staticCacheName = 'static';
-  var version = 'v1::sitesociete';
+  var version = 'lvd1::sitesociete';
 
   // Store core files in a cache (including a page to display when offline)
   function updateStaticCache() {
@@ -18,6 +18,14 @@
                   '/sitesociete/css/main.css/',
                   '/sitesociete/css/materialize.min.css',                  
                   '/sitesociete/img/roman-kraft-208004-unsplash.png',
+                  '/sitesociete/img/img/products/in-plant-2.png',
+                  '/sitesociete/img/img/products/ou-plant-0.png',
+                  '/sitesociete/img/img/products/ambiance-out-1.png',
+                  '/sitesociete/img/img/products/ambiance-int-1.png',
+                  '/sitesociete/img/img/products/ambiance-out-1.png',
+                  '/sitesociete/img/img/insta/insta1.png',
+                  '/sitesociete/img/img/insta/insta2.png',
+                  '/sitesociete/img/img/insta/insta3.png',
                   '/sitesociete/',
                   '/sitesociete/index.html',
                   '/sitesociete/offline.html'
