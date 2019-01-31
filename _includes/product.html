@@ -11,10 +11,17 @@
                 <p>{{ product.description }}</p>
                 <!-- 
                   <p><a class="product" href="{{ site.baseurl }}{{ product.url }}">Plus de details</a></p>
-                  -->
+                  <p class="tag"><a href="#{{ tag | slugify }}">{{ product.tag }}</a></p> 
+                -->
                 <hr>
-                <p class="cat"><a href="#{{ categorie | slugify }}">{{ product.categories }}</a></p>   
+                <p class="cat">{{ product.categories }}</p>   
                 
+                <small>
+                    {% for tag in product.tags %}
+                    <a href="{{ site.baseurl }}/tags/{{ tag }}/">{{ tag }}</a>
+                    {% endfor %}
+                </small>
+             
                 
         </div>    
       
@@ -33,5 +40,6 @@
   
     </div> 
     
+   
     
 </div>

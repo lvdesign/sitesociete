@@ -18,6 +18,9 @@ html {
     font-weight: bold;
     text-transform: uppercase;
   }
+  .catbloc{
+    margin: 1em 0;
+  }
 
   .fondFooter{
     background: url("../img/fonds/fondFooter.svg") repeat center center fixed;

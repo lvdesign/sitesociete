@@ -24,6 +24,15 @@ api_key: Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjc
 collections:
   products:
      output: true
+     permalink: /:collection/:name/index.html
+
+jekyll-archives:
+  enabled: [ ]
+  layout: 'archive'
+  permalinks:
+    tag: '/tag/:name/'
+    categories: '/categories/:name/'
+
 
 
 # Build settings

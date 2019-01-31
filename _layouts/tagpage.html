@@ -1,0 +1,27 @@
+---
+layout: default 
+
+
+---
+
+
+<!-- We're going to give each page a tag when we create it.
+This will be the title 
+https://dev.to/rpalo/jekyll-tags-the-easy-way
+-->
+<h1>{{ page.tag | capitalize }}</h1>
+
+<ul> 
+   
+   
+            {% for product in site.tags[product.tag] %}
+            <li>
+                <a href="{{ product.url }}">{{ product.name }}</a>
+                {{ product.tag }}
+            </li>
+            {% else %}
+            <p> Error -- tag empty </p>
+            {% endfor %}
+   
+    
+</ul>
