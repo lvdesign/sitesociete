@@ -18,7 +18,11 @@ head: snipcart.html
                   <h2>{{ page.name }}</h2>                                    
                   <p> {{ page.content }} </p>
                   <hr>
-                  <p class="cat">{{ page.categories }}</p>  
+                  <small>
+                    {% for cat_name in page.categories %}
+                    <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name }}</a>
+                    {% endfor %}
+                </small>
 
 
                   <div class="card-action">        

@@ -1,0 +1,20 @@
+---
+layout: default 
+
+---
+
+<h1>{{ page.categories | capitalize }}</h1>
+<ul>{% assign products = site.products  %}
+        {% for product in products  %}        
+            <li>
+                <a href="{{ site.baseurl }}{{ product.url }}">{{ product.name }}</a>
+                <small>	
+                        {% for cat_name in product.categories %}
+			<a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name }}</a>
+			{% endfor %}
+		</small>
+            </li>            
+                {% else %}
+            <p> Error -- Product empty </p>
+        {% endfor %}
+</ul>

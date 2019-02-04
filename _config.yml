@@ -26,14 +26,6 @@ collections:
      output: true
      permalink: /:collection/:name/index.html
 
-jekyll-archives:
-  enabled: [ ]
-  layout: 'archive'
-  permalinks:
-    tag: '/tag/:name/'
-    categories: '/categories/:name/'
-
-
 
 # Build settings
 markdown: kramdown
