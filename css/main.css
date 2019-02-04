@@ -22,6 +22,24 @@ html {
     margin: 1em 0;
   }
 
+  
+
+  /*page CAT PAGE -- categorie liste */
+  ul.cat-page{
+    margin: 2em 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .cat-page-li{
+    display: initial;
+    margin-bottom: 2em;
+    margin-right: 3em;
+    padding: 0;
+    float: left;
+  }
+  .cat-page-li-img{ height: 100px;}
+  .cat-page-li h3{margin:0 0;padding: 0; }
+
   .fondFooter{
     background: url("../img/fonds/fondFooter.svg") repeat center center fixed;
   }

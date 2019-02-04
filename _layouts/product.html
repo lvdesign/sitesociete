@@ -12,7 +12,7 @@ head: snipcart.html
         <div class="card ">  
             <div class="card-image">
                 <img  src="{{ site.baseurl }}/{{ product.image }}" alt="{{ product.name }}">   
-                <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}{{ product.url }}"><i class="material-icons">shopping_cart</i></a>      
+                <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}{{ product.url }}"><i class="material-icons">add</i></a>      
             </div>
       
             <div class="card-content">
@@ -23,11 +23,10 @@ head: snipcart.html
                       <p class="tag"><a href="#{{ tag | slugify }}">{{ product.tag }}</a></p> 
                     -->
                     <hr>
-                    <p class="cat">{{ product.categories }}</p>   
                     
                     <small>
                         {% for cat_name in product.categories %}
-                        <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name }}</a>
+                        <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name | upcase  }}</a> || 
                         {% endfor %}
                     </small>
                  

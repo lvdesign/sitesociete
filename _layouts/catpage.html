@@ -3,18 +3,30 @@ layout: default
 
 ---
 
+<div class="base container products">
+    <div class="row product">
 <h1>{{ page.categories | capitalize }}</h1>
-<ul>{% assign products = site.products  %}
-        {% for product in products  %}        
-            <li>
-                <a href="{{ site.baseurl }}{{ product.url }}">{{ product.name }}</a>
-                <small>	
-                        {% for cat_name in product.categories %}
-			<a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name }}</a>
-			{% endfor %}
-		</small>
-            </li>            
-                {% else %}
-            <p> Error -- Product empty </p>
-        {% endfor %}
-</ul>
+<div class="col s12 ">
+    <ul class="cat-page">
+        {% assign products = site.products  %}
+            {% for product in products  %}        
+                <li class="cat-page-li">
+                    <a href="{{ site.baseurl }}{{ product.url }}">
+                        <img src="{{ site.baseurl }}/{{product.image}}" class="cat-page-li-img"  />
+                    <h3>{{ product.name }}</h3>
+                    </a>
+                    <small>	
+                    {% for cat_name in product.categories %}
+                                <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name | upcase }}</a>  -                          
+                    {% endfor %}
+                    </small>
+
+                    <hr />
+                </li>            
+                    {% else %}
+                <p> Error -- Product empty </p>
+            {% endfor %}
+    </ul>
+</div>
+</div>
+</div>

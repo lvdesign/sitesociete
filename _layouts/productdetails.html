@@ -19,8 +19,8 @@ head: snipcart.html
                   <p> {{ page.content }} </p>
                   <hr>
                   <small>
-                    {% for cat_name in page.categories %}
-                    <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name }}</a>
+                    {% for cat_name in page.categories  %}
+                    <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name | upcase }}</a> ||
                     {% endfor %}
                 </small>
 
