@@ -8,15 +8,24 @@ layout: default
 <h1>{{ page.categories | capitalize }}</h1>
 <div class="col s12 ">
     <ul class="cat-page">
-        {% assign products = site.products  %}
-            {% for product in products  %}        
+        <!-- assign products = site.products 
+                {% assign groups = site.products | group_by: "category" | sort: "name" %}
+
+                 {% assign toto = page.categories %}
+        {% assign sorted-products = site.products | where: "categories", "toto" %}
+         {% assign toto = page.categories %}
+        {% assign sites-products = site.products | where: "categories", "plante" %}
+
+        --> 
+       
+            {% for post in site.categories[page.categories]  %}        
                 <li class="cat-page-li">
-                    <a href="{{ site.baseurl }}{{ product.url }}">
-                        <img src="{{ site.baseurl }}/{{product.image}}" class="cat-page-li-img"  />
-                    <h3>{{ product.name }}</h3>
+                    <a href="{{ site.baseurl }}{{ post.url }}">
+                        <img src="{{ site.baseurl }}/{{post.image}}" class="cat-page-li-img"  />
+                    <h3>{{ post.name }}</h3>
                     </a>
                     <small>	
-                    {% for cat_name in product.categories %}
+                    {% for cat_name in post.categories %}
                                 <a href="{{ site.baseurl }}/categories/{{ cat_name }}/">{{ cat_name | upcase }}</a>  -                          
                     {% endfor %}
                     </small>
@@ -24,8 +33,11 @@ layout: default
                     <hr />
                 </li>            
                     {% else %}
-                <p> Error -- Product empty </p>
+                <p> Error -- Post empty </p>
             {% endfor %}
+    </ul>
+    <ul>
+    
     </ul>
 </div>
 </div>
