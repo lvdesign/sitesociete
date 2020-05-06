@@ -7,7 +7,7 @@
     <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
         <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 		
-    <link rel="manifest" href="site.webmanifest">
+    <link rel="manifest" href="{{ "site.webmanifest"  | prepend: site.baseurl }}">
     
     <!--Let browser know website is optimized for mobile-->
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
@@ -17,13 +17,18 @@
 <link rel="stylesheet" href="{{ "/css/materialize.min.css" | prepend: site.baseurl }}">
 <link rel="stylesheet" href="{{ "/css/main.css" | prepend: site.baseurl }}">
 
-<!-- snipcart  -->
-<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" rel="stylesheet" type="text/css" />
+
+<link href="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.css" rel="stylesheet" type="text/css" />
 <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
 <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+
+<!-- snipcart  https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css
 <script src="https://cdn.snipcart.com/scripts/2.0/snipcart.js" id="snipcart" data-api-key="Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz"></script>
-<link href="https://cdn.snipcart.com/themes/2.0/base/snipcart.min.css" type="text/css" rel="stylesheet" />
+-->
+<div hidden id="snipcart" data-api-key="Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz"></div>
+<script src="https://cdn.snipcart.com/themes/v3.0.12/default/snipcart.js"></script>
+
 <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
