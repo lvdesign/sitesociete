@@ -1,5 +1,9 @@
 _site/
 .sass-cache/
+
+*-cache/
+
+
 .jekyll-cache/
 .jekyll-metadata
 .myCMD.md
