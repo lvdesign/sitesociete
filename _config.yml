@@ -15,17 +15,17 @@
 # in the templates via {{ site.myvariable }}.
 title: site société
 email: mailbox@lvdesign.com.fr
-description: site société pour démo 
+description: site société pour démo
 baseurl: /sitesociete
 #url: "" # the base hostname & protocol for your site, e.g. http://example.com
+url: https://lvdesign.github.io/
 twitter_username: lvdesign
 api_key: Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz
 
 collections:
   products:
-     output: true
-     permalink: /:collection/:name/index.html
-
+    output: true
+    permalink: /:collection/:name/index.html
 
 # Build settings
 markdown: kramdown
@@ -37,10 +37,10 @@ plugins:
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
 exclude:
- - Gemfile
- - Gemfile.lock
- - node_modules
- - vendor/bundle/
- - vendor/cache/
- - vendor/gems/
- - vendor/ruby/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
