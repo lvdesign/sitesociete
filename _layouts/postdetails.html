@@ -26,10 +26,16 @@ head: snipcart.html
 
 
         <div class="card-action">
-          <button class="snipcart-add-item btn waves-effect waves-light green" data-item-name="{{ page.name }}"
-            data-item-id="{{ page.sku }}" data-item-image="{{ page.image }}" data-item-url="{{ site.baseurl }}"
-            data-item-price="{{ page.price }}" data-item-categories="{{ page.categories }}">
+          <button 
+          class="snipcart-add-item btn waves-effect waves-light green" 
+          data-item-name="{{ page.name }}"
+          data-item-id="{{ page.sku }}" 
+          data-item-image="{{ site.baseurl }}/{{ page.image }}" 
+          data-item-url="{{ site.baseurl }}"
+          data-item-price="{{ page.price }}" 
+          data-item-categories="{{ page.categories }}">
             Buy it for {{ page.price }} $
+          
           </button>
         </div>
       </div>

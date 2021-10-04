@@ -1,0 +1,72 @@
+html {
+    /* border-box box model allows us to add padding and border to our elements without increasing their size */
+    box-sizing: border-box;
+    /* A system font stack so things load nice and quick! */
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica,
+      Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+      color: #222;
+  }
+  *,
+  *:before,
+  *:after {
+    box-sizing: inherit;
+  }
+
+
+  .cat{
+    font-size: 1em;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  .catbloc{
+    margin: 1em 0;
+  }
+
+  
+
+  /*page CAT PAGE -- categorie liste */
+  ul.cat-page{
+    margin: 2em 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  .cat-page-li{
+    display: initial;
+    margin-bottom: 2em;
+    margin-right: 3em;
+    padding: 0;
+    float: left;
+  }
+  .cat-page-li-img{ height: 100px;}
+  .cat-page-li h3{margin:0 0;padding: 0; }
+
+  .fondFooter{
+    background: url("../img/fonds/fondFooter.svg") repeat center center fixed;
+  }
+  .footer{
+    background-color:#353A3F;
+  }
+  
+  /*button{
+    background-color: #4CAF50;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+  }
+  */
+  
+  ::-moz-selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}

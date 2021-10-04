@@ -1,0 +1,16 @@
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/sitesociete/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+/opt/homebrew/opt/ruby/bin/ruby -I /opt/homebrew/Cellar/ruby/3.0.2/lib/ruby/3.0.0 -r ./siteconf20211004-3781-96ecge.rb extconf.rb
+creating Makefile
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/sitesociete/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= clean
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/sitesociete/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\=
+compiling ruby_http_parser.c
+compiling ryah_http_parser.c
+linking shared-object ruby_http_parser.bundle
+
+current directory: /Users/laurentvignaux/Documents/gitLVdesign/sitesociete/vendor/bundle/ruby/3.0.0/gems/http_parser.rb-0.6.0/ext/ruby_http_parser
+make DESTDIR\= install
+/usr/bin/install -c -m 0755 ruby_http_parser.bundle ./.gem.20211004-3781-umrvf5

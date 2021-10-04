@@ -37,10 +37,10 @@ head: snipcart.html
               <button class="snipcart-add-item btn waves-effect waves-light green"
                 data-item-name="{{ post.name }}"
                 data-item-id="{{ post.sku }}"
-                data-item-image="{{ v.image }}"
+                data-item-image="{{ site.baseurl }}/{{ post.image }}"
                 data-item-url="{{ site.baseurl }}"
                 data-item-price="{{ post.price }}"
-                data-item-description="{{ v.description }}"
+                data-item-description="{{ post.description }}"
                 data-item-categories="{{ post.categories }}">
                 Buy it for {{ post.price }} $
               </button>

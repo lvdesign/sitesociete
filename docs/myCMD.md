@@ -15,3 +15,11 @@ bundle exec jekyll clean
 
 - Outputs any deprecation or configuration issues
 bundle exec jekyll doctor
+
+
+- online vers github
+build puis copier _site vers /docs
+
+-
+ gem install public_suffix --version 3.0.1
+ bundle update
