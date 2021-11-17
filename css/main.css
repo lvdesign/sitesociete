@@ -13,6 +13,19 @@ html {
   }
 
 
+    /* Accessibility */
+    a, a:focus, a:hover {  color: rgb(5, 77, 24); }
+    a:focus, a:hover{ outline: 2px dotted;}
+  
+    input:focus {
+      box-shadow: 0 0.1em 0.5em rgba(0, 0, 0, 0.5);
+    }
+    input[type="text"]:focus,
+    input[type="email"]:focus,
+    input[type="tel"]:focus,
+    input[type="number"]:focus{ outline: 2px solid   rgb(5, 77, 24);  }
+
+
   .cat{
     font-size: 1em;
     font-weight: bold;

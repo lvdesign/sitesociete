@@ -24,35 +24,32 @@
     <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ '/feed.xml' | prepend:
         site.baseurl | prepend: site.url }}" />
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
+    <!-- SnipCart Component-->
     <link rel="stylesheet" href="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.css" />
-
     <script async src="https://cdn.snipcart.com/themes/v3.2.1/default/snipcart.js"></script>
-<div hidden id="snipcart" data-api-key="Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz"  data-config-modal-style="side"></div>
+    <div hidden id="snipcart" data-api-key="Zjk4ZjI4Y2ItMzY5OS00MDM3LTljNTEtY2Y1MTFkYTE5MTk5NjM2NjY1NDcwNTQxMDc2Mjcz"  data-config-modal-style="side"></div>
 
-
-
+    <!-- Typo -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
         integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
 </head>
 
-<body>
+<body id="home">
     <!-- Nav -->
     <div class="navbar-fixed">
         <nav class="green">
             <div class="nav-wrapper z-depth-5">
-                <a href="{{ site.baseurl }}/" class="brand-logo société"><img src=" {{'/img/picto/pictoF.svg' |
+                <a href="{{ site.baseurl }}/#home" class="brand-logo société"><img src=" {{'/img/picto/pictoF.svg' |
                         prepend:site.baseurl }}" alt="logo site société"
                         style="height:35px; margin: 0 .1em 0 .4em">SiteSociété</a>
                 <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
                 <ul class="right hide-on-med-and-down">
                     <li><a href="{{ site.baseurl }}/#services">Services</a></li>
                     <li><a href="{{ site.baseurl }}/#produits">Produits</a></li>
-                    <li><a href="{{ site.baseurl }}/#actu">Actualités</a></li>
+                    <li><a href="{{ site.baseurl }}/#actu">Actualité</a></li>
                     <li><a href="{{ site.baseurl }}/#contact">Contact</a></li>
                     <li><a href="{{ site.baseurl }}/posts/">Boutique</a></li>
-
 
                     <li><button style="height:1px; background-color: white; border:none;"
                             class="header__checkout snipcart-checkout snipcart-summary">
@@ -69,8 +66,8 @@
     </div>
     <ul class="sidenav" id="mobile-demo">
         <li><a href="{{ site.baseurl }}/#services">Services<i class="tiny material-icons">style</i></a></li>
-        <li><a href="{{ site.baseurl }}/#produits">Produits<i class="tiny material-icons">spa</i></a></li>
-        <li><a href="{{ site.baseurl }}/#actu">Acualités<i class="tiny material-icons">favorite</i></a></li>
+        <li><a href="{{ site.baseurl }}/#produits">roduits<i class="tiny material-icons">spa</i></a></li>
+        <li><a href="{{ site.baseurl }}/#actu">Acualité<i class="tiny material-icons">favorite</i></a></li>
         <li><a href="{{ site.baseurl }}/#contact">Contact<i class="tiny material-icons">email</i></a></li>
         <li><a href="{{ site.baseurl }}/posts/">Boutique</a></li>
         <li><button style="height:1px; background-color: white; border:none;"

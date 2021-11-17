@@ -21,7 +21,7 @@ layout: default
             {% for post in site.categories[page.categories]  %}        
                 <li class="cat-page-li">
                     <a href="{{ site.baseurl }}{{ post.url }}">
-                        <img src="{{ site.baseurl }}/{{post.image}}" class="cat-page-li-img"  />
+                        <img src="{{ site.baseurl }}/{{post.image}}" class="cat-page-li-img" alt="{{ post.name }}" />
                     <h3>{{ post.name }}</h3>
                     </a>
                     <small>	

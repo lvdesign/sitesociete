@@ -6,7 +6,12 @@ layout: default
 <!-- 1/ Parrallax Image large -->
 <div class="parallax-container">
   <div class="parallax">
-    <img src="img/roman-kraft-208004-unsplash2.png" alt="ma société à votre service">
+    <picture>
+      <source srcset="img/roman-kraft-208004-unsplash2.webp" type="image/webp" media="(min-width: 10em)">
+      <source srcset="img/roman-kraft-208004-unsplash2.png" type="image/png" media="(min-width: 10em)"> 
+      <img width='500' src="img/roman-kraft-208004-unsplash2.png" alt="Ma société à votre service">
+    </picture>
+  
   </div>
   <br>
   <div class="container ">
@@ -80,7 +85,12 @@ layout: default
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image">
-          <img src="img/products/in-plant-2.png">
+          <picture>
+            <source srcset="img/products/in-plant-2.webp" type="image/webp" media="(min-width: 10em)">
+            <source srcset="img/products/in-plant-2.png" type="image/png" media="(min-width: 10em)"> 
+            <img width='500' src="img/products/in-plant-2.png" alt="Plantes d'interieures">
+          </picture>
+         
           <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}/posts/">
             <i class="material-icons small">shopping_cart</i></a>
         </div>
@@ -95,7 +105,11 @@ layout: default
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image">
-          <img src="img/products/ou-plant-0.png">
+          <picture>
+            <source srcset="img/products/ou-plant-0.webp" type="image/webp" media="(min-width: 10em)">
+            <source srcset="img/products/ou-plant-0.png" type="image/png" media="(min-width: 10em)"> 
+            <img width='500' src="img/products/ou-plant-0.png" alt="Plantes d'exterieures">
+          </picture>
 
           <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}/posts/">
             <i class="material-icons small">shopping_cart</i></a>
@@ -111,8 +125,12 @@ layout: default
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image">
-          <img src="img/products/ambiance-out-1.png">
-
+          <picture>
+            <source srcset="img/products/ambiance-out-1.webp" type="image/webp" media="(min-width: 10em)">
+            <source srcset="img/products/ambiance-out-1.png" type="image/png" media="(min-width: 10em)"> 
+            <img width='500' src="img/products/ambiance-out-1.png" alt="Meubles de jardin">
+          </picture>
+         
           <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}/posts/">
             <i class="material-icons small">shopping_cart</i></a>
         </div>
@@ -127,7 +145,12 @@ layout: default
     <div class="col s12 m6">
       <div class="card">
         <div class="card-image">
-          <img src="img/products/ambiance-in-1.png">
+          <picture>
+            <source srcset="img/products/ambiance-in-1.webp" type="image/webp" media="(min-width: 10em)">
+            <source srcset="img/products/ambiance-in-1.png" type="image/png" media="(min-width: 10em)"> 
+            <img width='500' src="img/products/ambiance-in-1.png" alt="Décorations d'interieures">
+          </picture>
+          
 
           <a class="btn-floating halfway-fab waves-effect waves-light red accent-1" href="{{ site.baseurl }}/posts/">
             <i class="material-icons small">shopping_cart</i></a>
@@ -156,11 +179,41 @@ layout: default
 
     <div class="carousel col s12 m6">
       <h5 class="center">Instagram mood </h5>
-      <a class="carousel-item" href="#one!"><img src="img/insta/insta1.png"></a>
-      <a class="carousel-item" href="#two!"><img src="img/insta/insta2.png"></a>
-      <a class="carousel-item" href="#three!"><img src="img/insta/insta3.png"></a>
-      <a class="carousel-item" href="#four!"><img src="img/insta/insta1.png"></a>
-      <a class="carousel-item" href="#five!"><img src="img/insta/insta2.png"></a>
+      <a class="carousel-item" href="#one!">
+        <picture>
+          <source srcset="img/insta/insta1.webp" type="image/webp" media="(min-width: 10em)">
+          <source srcset="img/insta/insta1.png" type="image/png" media="(min-width: 10em)"> 
+          <img width='200' src="img/insta/insta1.png" alt="1-textes Décorations d'interieures">
+        </picture>        
+      </a>
+      <a class="carousel-item" href="#two!">
+        <picture>
+          <source srcset="img/insta/insta2.webp" type="image/webp" media="(min-width: 10em)">
+          <source srcset="img/insta/insta2.png" type="image/png" media="(min-width: 10em)"> 
+          <img width='200' src="img/insta/insta2.png" alt="2-textes Décorations d'interieures">
+        </picture>
+      </a>
+      <a class="carousel-item" href="#three!">
+        <picture>
+          <source srcset="img/insta/insta3.webp" type="image/webp" media="(min-width: 10em)">
+          <source srcset="img/insta/insta3.png" type="image/png" media="(min-width: 10em)"> 
+          <img width='200' src="img/insta/insta3.png" alt="3-textes Décorations d'interieures">
+        </picture>
+      </a>
+      <a class="carousel-item" href="#four!">
+        <picture>
+          <source srcset="img/insta/insta1.webp" type="image/webp" media="(min-width: 10em)">
+          <source srcset="img/insta/insta1.png" type="image/png" media="(min-width: 10em)"> 
+          <img width='200' src="img/insta1.png" alt="4-textes Décorations d'interieures">
+        </picture>
+      </a>
+      <a class="carousel-item" href="#five!">
+        <picture>
+          <source srcset="img/insta/insta2.webp" type="image/webp" media="(min-width: 10em)">
+          <source srcset="img/insta/insta2.png" type="image/png" media="(min-width: 10em)"> 
+          <img width='200' src="img/insta2.png" alt="5-textes Décorations d'interieures">
+        </picture>
+      </a>
 
     </div>
 
@@ -277,11 +330,11 @@ layout: default
     </div>
     <div class="col s6 right-align">
       <!--Facebook-->
-      <a><i class="fab fa-facebook-square fa-3x green-text "></i></a>
+      <a href="#"><i class="fab fa-facebook-square fa-3x green-text "></i></a>
       <!--Twitter-->
-      <a class="tw-ic"><i class="fab fa-twitter-square fa-3x green-text"></i></a>
+      <a href="#" class="tw-ic"><i class="fab fa-twitter-square fa-3x green-text"></i></a>
       <!--Instagram-->
-      <a class="ins-ic"><i class="fab fa-instagram fa-3x green-text"></i></a>
+      <a href="#" class="ins-ic"><i class="fab fa-instagram fa-3x green-text"></i></a>
     </div>
 
     </row>
